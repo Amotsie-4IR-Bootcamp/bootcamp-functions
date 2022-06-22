@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(236, 255, 255);
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  filter: drop-shadow(0 0 30px rgb(17, 17, 134));
+}
+
+.row {
+  margin-top: 2em;
+}
+button {
+  padding: 2px 4px;
+}
+
+.btn1,
+.btn2,
+.btn3,
+.btn4 {
+  background-color: rgb(110, 161, 110);
+  padding: 3px 10px;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover,
+.btn4:hover {
+  background-color: rgb(168, 253, 168);
+  color: black;
+}
+
+.istructions {
+  padding: 2px 5px;
+  background-color: rgb(197, 238, 238);
+  min-height: 5.5em;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  font-style: italic;
+  font-size: medium;
+  font-weight: 500;
+}
