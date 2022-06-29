@@ -52,3 +52,35 @@ button {
   font-size: medium;
   font-weight: 500;
 }
+
+.expensive-item .row {
+  margin-top: 2px;
+}
+
+.msg {
+  color: red;
+  font-style: italic;
+  font-size: small;
+  background-color: antiquewhite;
+  font-weight: bold;
+  padding: 1em;
+}
+
+.right input {
+  margin-bottom: 4px;
+}
+
+.left {
+  border-right: 1px solid red;
+}
+
+.left > input[type="number"] {
+  margin-bottom: 4px;
+}
+
+.container {
+  width: 95vw;
+  padding-bottom: 1em;
+  border: 1px solid grey;
+  border-radius: 10px;
+}

@@ -89,29 +89,43 @@
           </div>
         </section>
 
-        <section class="col-6 expensive-item">
+        <section class="col-6 expensive-item" x-data="mostExpensive">
           <h3>Expensive Items</h3>
           <div x-show.transition="!show">
-            <p class="istructions" x-text="instructions">
-              <i>To be completed....</i>
-            </p>
+            <p class="istructions" x-text="instructions"></p>
             <button class="btn btn4" @click="show=!show">Go</button>
           </div>
-          <!-- <div x-show.transition="show">
+          <div class="row" x-show.transition="show">
             <button class="btn btn44" @click="show=!show">Instructions</button>
-            <br /><br />
-            <label for="item">Item Name:</label><br />
-            <input type="text" id="item" /><br />
-            <label for="price">Item Price:</label><br />
-            <input type="number" id="price" min="0" /><br />
-            <button>Insert</button>
-            <button>Complete</button>
-          </div> -->
+
+            <p><span x-text="counter"></span> item(s)</p>
+            <p x-html="message" class="msg"></p>
+            <div class="col-6 left">
+              <label for="item">Item Name:</label><br />
+              <input type="text" id="item" x-model="item" /><br />
+              <label for="price">Item Qty:</label><br />
+              <input
+                style="width: 60px"
+                type="number"
+                id="price"
+                min="0"
+                x-model="price"
+              /><br />
+              <button @click="insertItem()">Insert Item</button>
+              <button @click="myList=[]">Clear List</button>
+            </div>
+            <div class="col-6 right">
+              <label for="limit">Search for items over:</label><br />
+              <input type="number" id="limit" min="0" x-model="limit" /><br />
+              <button @click="findItems">Search</button>
+            </div>
+          </div>
         </section>
       </div>
     </div>
     <script src="greeting.js"></script>
     <script src="transport.js"></script>
     <script src="wordGame.js"></script>
+    <script src="mostExpensive.js"></script>
   </body>
 </html>
